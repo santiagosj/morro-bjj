@@ -1,42 +1,41 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Image from './Image'
+import './header.css'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = ({ 
+  title, 
+  subtitle, 
+  backgroundImage, 
+  large, 
+  className = ''
+ }) => {
+    if(large) className += ' PageHeader-large' 
+   return (
+    <header className={`PageHeader relative ${className}`}>
+          
+          { backgroundImage && (
+                <Image  
+                    background
+                    resolutions="large"
+                    imgSrc={backgroundImage}
+                    alt={title}
+                    size="cover" 
+                />
+          )}
+     
+          <div className="container relative">
+            <h1 className="PageHeader--Title">{title}</h1>
+            <p className="Content PageHeader--Subtitle">{subtitle}</p>
+          </div>
+          
+     </header>
+   )
+ }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
 }
 
 export default Header

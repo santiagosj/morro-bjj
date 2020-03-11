@@ -1,0 +1,12 @@
+.footer {
+    padding: 2rem 0;
+    background: var(--lightGrey);
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
