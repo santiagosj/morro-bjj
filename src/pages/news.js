@@ -100,15 +100,6 @@ const News = ({data})=> {
                     </div>
                 </section>
 
-                <section className="section">
-                    <div className="container">
-                        <section className="section" >
-                           <div className="container" style={styles}>
-                               Noticia aquí
-                           </div>    
-                        </section>
-                    </div>
-                </section>
           </Layout>
         )
 }
