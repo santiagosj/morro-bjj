@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Header from '../components/header'
 import { graphql } from 'gatsby'
 import NewsSection from '../components/NewsSection'
-import Galeria from '../components/Gallery'
+
 //import NewsCategoriesNav from '../components/NewsCategoriesNav'
 /**
  * Próximos requerimientos
@@ -96,7 +96,9 @@ const News = ({data})=> {
                 <section className="section">
                     <div className="container">
                         <h2>Noticias</h2>
+                      
                         <NewsSection posts={posts}/>
+                       
                     </div>
                 </section>
 

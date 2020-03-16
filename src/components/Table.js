@@ -3,7 +3,7 @@ import './Table.css'
 
 const HORARIOS = [
   {  
-    id:13,
+    id:15,
     actividad:"Actividades",
   },
     {
@@ -89,6 +89,20 @@ const HORARIOS = [
         dia:"Lunes y miercoles",
         hora: "21:30 hs",
         instructor:"Lucas Murua y Manuel Exposito"
+    },
+    {
+      id:13,
+      actividad:"MMA",
+      dia:"Viernes",
+      hora: "20:00 hs",
+      instructor:"Lucas Murua y Manuel Exposito"
+    },
+    {
+      id:14,
+      actividad:"Boxeo",
+      dia:"Lunes y Miercoles",
+      hora: "18:00 hs",
+      instructor:"Lucas Murua"
     }
 ]
 
@@ -156,7 +170,7 @@ export default class Table extends Component {
             <tr>
               <th>Días</th>
               <th>Hora</th>
-              <th>Instructor</th>
+              <th>Instructor/es</th>
             </tr>     
           </thead>
           <tbody>

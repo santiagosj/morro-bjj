@@ -111,12 +111,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `morro-brazilian-jiu-jitsu`,
+        short_name: `morro-bjj`,
         start_url: `/`,
         background_color: `black`,
         theme_color: `black`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/morro.png`, // This path is relative to the root of the site.
       },
     },
