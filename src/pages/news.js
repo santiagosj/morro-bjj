@@ -35,12 +35,6 @@ export const byCategory = (posts, title, contentType) => {
   return isCategory ? posts.filter(byCategory) : posts
 }
 */
-
-const styles = {
-  display: "flex",
-  justifyContent: "center"
-}
-
 export const data =graphql`
 {
   newsPage: news {

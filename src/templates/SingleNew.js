@@ -8,25 +8,25 @@ import Header from '../components/header'
 import Galeria from "../components/Gallery"
 
 export const SingleNewTemplate = ({
-    title,
-    date,
-    body,
-    excerpt,
-    nextPostURL,
-    prevPostURL,
-    categories=[],
-    featuredImage,
-    photos=[],
-    video,
-}) => (
-   <main>
-       <article className="SinglePost section light">
-          <div className="container skinny">
-              <Link className="SinglePost--BackButton" to="/news/">
-                 <ChevronLeft />  VOLVER
-              </Link>
-           <div className="SinglePost--Content relative">
-              <div className="SinglePost--Meta">
+      title,
+      date,
+      body,
+      excerpt,
+      nextPostURL,
+      prevPostURL,
+      categories=[],
+      featuredImage,
+      photos=[],
+      video,
+   }) => (
+      <main>
+         <article className="SinglePost section light">
+            <div className="container skinny">
+                <Link className="SinglePost--BackButton" to="/news/">
+                   <ChevronLeft />  VOLVER
+                </Link>
+            <div className="SinglePost--Content relative">
+               <div className="SinglePost--Meta">
                   {date && (
                       <time 
                         className="SinglePost--Meta--Date"
@@ -143,12 +143,12 @@ export const pageQuery = graphql`
         video
         featuredImage 
         photos{
-          src
-          srcSet
-          title
-          width
-          height
-          sizes
+            src
+            srcSet
+            title
+            width
+            height
+            sizes
         }
       }
     

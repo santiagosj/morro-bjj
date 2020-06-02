@@ -107,8 +107,6 @@ const HORARIOS = [
 ]
 
 
-
-
 export default class Table extends Component {
   
    constructor(props){
@@ -120,8 +118,8 @@ export default class Table extends Component {
    }
 
    handleChange = event => {
-    this.setState({ value: event.target.value });
-  };
+      this.setState({ value: event.target.value });
+   };
 
   handleChangeHorario = event => {
     this.setState({ horario: event.target.value });
@@ -142,10 +140,12 @@ export default class Table extends Component {
 
     return unique;
   }
+
    componentDidMount() {
     const horarios = HORARIOS       
     this.setState({ horarios: horarios });
   }
+
   render() {
     const uniqueHorario = this.getUnique(this.state.horarios, "actividad");
 
